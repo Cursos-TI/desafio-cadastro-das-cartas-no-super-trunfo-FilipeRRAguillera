@@ -29,11 +29,9 @@ int main() {
 
     printf("Insira a quantidade de pontos turísticos da cidade 1.\n");
     scanf("%d", &pont1);
-
-
     
     // A fase de cadastramento da cidade 2
-    printf("Insira o código da cidade 2.\n");
+    printf("\nInsira o código da cidade 2.\n");
     scanf("%s", &codi2);
 
     printf("Insira o nome da cidade 2.\n");
@@ -55,20 +53,20 @@ int main() {
 
     // A fase de exibição de dados das cidades cadastradas
     printf("\nCarta 1:\n");
-    printf("O código da cidade 1: %s\n", codi1);
-    printf("O nome da cidade 1: %s\n", nome1);
-    printf("A população da cidade 1: %d\n", popu1);
-    printf("A área da cidade 1: %.2fKm²\n", area1);
-    printf("O PIB da cidade 1: R$%.2f\n", pib1);
-    printf("A quantidade de pontos turísticos da cidade 1: %d\n", pont1);
+    printf("O código da cidade: %s\n", codi1);
+    printf("O nome da cidade: %s\n", nome1);
+    printf("A população da cidade: %d\n", popu1);
+    printf("A área da cidade: %.2fKm²\n", area1);
+    printf("O PIB da cidade: R$%.2f\n", pib1);
+    printf("A quantidade de pontos turísticos da cidade: %d\n", pont1);
 
     printf("\nCarta 2:\n");
-    printf("O código da cidade 2: %s\n", codi2);
-    printf("O nome da cidade 2: %s\n", nome2);
-    printf("A população da cidade 2: %d\n", popu2);
-    printf("A área da cidade 2: %.2fKm²\n", area2);
-    printf("O PIB da cidade 2: R$%.2f\n", pib2);
-    printf("A quantidade de pontos turísticos da cidade 2: %d\n", pont2);
+    printf("O código da cidade: %s\n", codi2);
+    printf("O nome da cidade: %s\n", nome2);
+    printf("A população da cidade: %d\n", popu2);
+    printf("A área da cidade: %.2fKm²\n", area2);
+    printf("O PIB da cidade: R$%.2f\n", pib2);
+    printf("A quantidade de pontos turísticos da cidade: %d\n", pont2);
 
     return 0;
 }
