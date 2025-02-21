@@ -7,6 +7,8 @@ int main() {
     int popu1, popu2, pont1, pont2; // A população da cidade, O numero de Pontos Turísticos da cidade
     float area1, area2, pib1, pib2; // A area em Km² da cidade, PIB da cidade
 
+    // Variaveis para resultado de calculos
+    float dens1, dens2, pibp1, pibp2; // Densidade populacional, PIB per Capita
 
 
     // A fase de cadastramento da cidade 1
@@ -29,7 +31,7 @@ int main() {
 
     printf("Insira a quantidade de pontos turísticos da cidade 1.\n");
     scanf("%d", &pont1);
-    
+
     // A fase de cadastramento da cidade 2
     printf("\nInsira o código da cidade 2.\n");
     scanf("%s", &codi2);
@@ -51,6 +53,12 @@ int main() {
 
 
 
+    // Calculo de variaveis
+    dens1 = popu1 / area1; // Habitante por Km²
+    dens2 = popu2 / area2;
+    pibp1 = pib1 / popu1; // PIB por habitante
+    pibp2 = pib2 / popu2;
+
     // A fase de exibição de dados das cidades cadastradas
     printf("\nCarta 1:\n");
     printf("O código da cidade: %s\n", codi1);
@@ -59,6 +67,8 @@ int main() {
     printf("A área da cidade: %.2fKm²\n", area1);
     printf("O PIB da cidade: R$%.2f\n", pib1);
     printf("A quantidade de pontos turísticos da cidade: %d\n", pont1);
+    printf("A Densidade populacional da cidade: %.2f por Km²\n", dens1);
+    printf("O PIB per capita da cidade: R$%.2f\n", pibp1);
 
     printf("\nCarta 2:\n");
     printf("O código da cidade: %s\n", codi2);
@@ -67,6 +77,8 @@ int main() {
     printf("A área da cidade: %.2fKm²\n", area2);
     printf("O PIB da cidade: R$%.2f\n", pib2);
     printf("A quantidade de pontos turísticos da cidade: %d\n", pont2);
+    printf("A Densidade populacional da cidade: %.2f por Km²\n", dens2);
+    printf("O PIB per capita da cidade: R$%.2f\n", pibp2);
 
     return 0;
 }
